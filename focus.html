@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Mode</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <h2>Student Productivity Hub</h2>
+    <p>Organize. Focus. Achieve.</p>
+  </div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="focus.html" class="active">Focus Mode</a>
+    <a href="#">Notes</a>
+    <a href="#">About</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- BACK -->
+  <div class="back-container">
+    <a href="index.html" class="back-btn">⬅ Back to Dashboard</a>
+  </div>
+
+  <!-- CARDS -->
+  <section class="cards-container">
+
+    <!-- TASKS -->
+    <div class="card">
+      <h3>📝 Today's Tasks</h3>
+
+      <ul class="task-list">
+        <li>
+          <input type="checkbox">
+          <span>Finish assignment</span>
+        </li>
+        <li>
+          <input type="checkbox">
+          <span>Study for exam</span>
+        </li>
+      </ul>
+
+      <div class="input-box">
+        <input type="text" placeholder="Add new task...">
+        <button class="start-btn">Add</button>
+      </div>
+    </div>
+
+    <!-- TIMER -->
+    <div class="card highlight">
+      <h3>⏱ Focus Timer</h3>
+
+      <div class="timer" id="timer">25:00</div>
+
+      <div class="btn-group">
+        <button class="start-btn">▶ Start</button>
+        <button class="pause-btn">⏸ Pause</button>
+        <button class="reset-btn">⏹ Reset</button>
+      </div>
+
+      <p>Work for 25 minutes, then take a break.</p>
+    </div>
+
+    <!-- NOTES -->
+    <div class="card">
+      <h3>📄 Quick Notes</h3>
+
+      <textarea placeholder="Write notes..."></textarea>
+
+      <button class="save-btn">Save Note</button>
+    </div>
+
+  </section>
+
+</main>
+
+</body>
+</html>

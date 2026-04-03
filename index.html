@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Productivity Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <h2>Student Productivity Hub</h2>
+    <p>Organize. Focus. Achieve.</p>
+  </div>
+
+  <nav class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="focus.html">Focus Mode</a>
+    <a href="#">Notes</a>
+    <a href="#">About</a>
+  </nav>
+</header>
+
+<!-- MAIN -->
+<main>
+
+  <!-- WELCOME -->
+  <section class="welcome">
+    <h1>Good Morning 👋</h1>
+    <p>Let’s make today productive</p>
+  </section>
+
+  <!-- CARDS -->
+  <section class="cards-container">
+
+    <!-- TODO -->
+    <div class="card">
+      <h3>📝 To-Do List</h3>
+
+      <div class="input-box">
+        <input type="text" placeholder="Add a new task...">
+        <button class="start-btn">Add</button>
+      </div>
+
+      <ul class="task-list">
+        <li>
+          <input type="checkbox">
+          <span>Finish assignment</span>
+        </li>
+        <li>
+          <input type="checkbox">
+          <span>Study for exam</span>
+        </li>
+      </ul>
+
+      <a href="focus.html" class="link">View Tasks →</a>
+    </div>
+
+    <!-- TIMER -->
+    <div class="card highlight">
+      <h3>⏱ Focus Timer</h3>
+
+      <div class="timer">25:00</div>
+
+      <button class="secondary-btn">Go to Focus Mode</button>
+    </div>
+
+    <!-- NOTES -->
+    <div class="card">
+      <h3>📄 Notes</h3>
+
+      <textarea placeholder="Write notes here..."></textarea>
+
+      <button class="save-btn">Save</button>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer-btn">
+    <a href="focus.html">Go to Focus Mode →</a>
+  </div>
+
+</main>
+
+</body>
+</html>
