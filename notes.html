@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes - Student Productivity Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+  <div class="logo">
+    <h2>Student Productivity Hub</h2>
+    <p>Organize. Focus. Achieve.</p>
+  </div>
+
+  <nav class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="focus.html">Focus Mode</a>
+    <a href="notes.html">Notes</a>
+    <a href="#">About</a>
+  </nav>
+</header>
+
+    <!-- Notes Page Content -->
+    <main class="page-container">
+        <h1>📝 Your Notes</h1>
+        <p>Write, save, and organize your ideas here.</p>
+
+        <div class="notes-container">
+            <textarea id="noteInput" placeholder="Write your notes here..."></textarea>
+            <button id="saveNoteBtn">Save Note</button>
+        </div>
+
+        <div class="saved-notes">
+            <h2>Saved Notes</h2>
+            <ul id="notesList">
+                <!-- Dynamically added notes will appear here -->
+            </ul>
+        </div>
+    </main>
+
+    <script src="notes.js"></script>
+</body>
+</html>
