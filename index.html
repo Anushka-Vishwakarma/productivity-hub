@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Productivity Hub</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
 
   <!-- WELCOME -->
   <section class="welcome">
-    <h1>Good Morning 👋</h1>
+    <h1>Welcome</h1>
     <p>Let’s make today productive</p>
   </section>
 
@@ -38,43 +39,38 @@
 
     <!-- TODO -->
     <div class="card">
-      <h3>📝 To-Do List</h3>
+      <h3><i class="fa-solid fa-list-check"></i>To-Do List</h3>
 
       <div class="input-box">
-        <input type="text" placeholder="Add a new task...">
+        <input type="text" placeholder="Add a new task..." id="task-input">
         <button class="start-btn">Add</button>
       </div>
 
       <ul class="task-list">
-        <li>
-          <input type="checkbox">
-          <span>Finish assignment</span>
-        </li>
-        <li>
-          <input type="checkbox">
-          <span>Study for exam</span>
-        </li>
+       
       </ul>
 
-      <a href="focus.html" class="link">View Tasks →</a>
+      <a href="focus.html" class="link">View Tasks -></a>
     </div>
 
     <!-- TIMER -->
     <div class="card highlight">
-      <h3>⏱ Focus Timer</h3>
+      <h1>⏱ Focus Timer</h1>
 
       <div class="timer">25:00</div>
 
-      <button class="secondary-btn">Go to Focus Mode</button>
+      <a href="focus.html"><button class="secondary-btn">Go to Focus Mode</button></a>
     </div>
 
     <!-- NOTES -->
     <div class="card">
-      <h3>📄 Notes</h3>
+      <h3><i class="fa-solid fa-book"></i> Notes</h3>
+        <div class="notes-container">
+            <textarea class="noteInput" class="save-btn" placeholder="Write your notes here..."></textarea>
+            <button class="save-btn"><i class="fa-solid fa-save"></i> Save Note</button>
+        </div>
 
-      <textarea placeholder="Write notes here..."></textarea>
-
-      <button class="save-btn">Save</button>
+      <a href="notes.html" class="link">View Notes →</a>
     </div>
 
   </section>
@@ -85,6 +81,6 @@
   </div>
 
 </main>
-
+<script src="script.js"></script>
 </body>
 </html>
