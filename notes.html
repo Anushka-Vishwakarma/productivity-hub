@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes - Student Productivity Hub</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -24,22 +25,20 @@
 
     <!-- Notes Page Content -->
     <main class="page-container">
-        <h1>📝 Your Notes</h1>
+        <h1><i class="fa-solid fa-book"></i>Your Notes</h1>
         <p>Write, save, and organize your ideas here.</p>
 
         <div class="notes-container">
-            <textarea id="noteInput" placeholder="Write your notes here..."></textarea>
-            <button id="saveNoteBtn">Save Note</button>
+            <textarea class="noteInput" placeholder="Write your notes here..."></textarea>
+         <button class="save-btn"><i class="fa-solid fa-save"></i> Save Note</button>
         </div>
 
         <div class="saved-notes">
-            <h2>Saved Notes</h2>
-            <ul id="notesList">
-                <!-- Dynamically added notes will appear here -->
-            </ul>
-        </div>
+  <h2>Saved Notes</h2>
+  <div id="notesGrid" class="notes-grid"></div>
+</div>
     </main>
 
-    <script src="notes.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
